@@ -11,36 +11,404 @@
         content="holiday apartment, vacation rental, holiday home, villa, FeWo-direkt, book holiday apartment, find vacation rental">
     <meta name="author" content="FeWo-direkt">
     <link rel="icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <div class="header">
+    <header class="header">
         <div class="logo">
             <img src="logo.svg" alt="FeWo-direkt Logo">
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#">Download App</a></li>
-                    <li><a href="#">Travel Planner</a></li>
-                    <li><a href="#">Register Accommodation</a></li>
-                    <li><a href="#">Help</a></li>
-                    <li><a href="#">My Travels</a></li>
-                    <li><a href="#">Register</a></li>
-                </ul>
-            </nav>
         </div>
+        <nav class="navbar">
+            <ul>
+                <li class="downloadBut"><a href="#">Download App <i class="fa-solid fa-download"></i></a></li>
+                <li><a href="#">Travel Planner</a></li>
+                <li><a href="#">Register Accommodation</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">My Travels</a></li>
+                <li><a href="#">Register</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <div class="content">
+        <h1>The whole accommodation just for you</h1>
+        <div class="forYou">
+            <div class="seek-item location">
+                <i class="fa fa-location-dot"></i>
+                <input type="text" placeholder="Where do you want to visit?">
+            </div>
+            <div class="seek-item date">
+                <i class="fa-regular fa-calendar-days"></i>
+                <div>
+                    <span>Date</span>
+                    <input type="text" placeholder="June 28 - July 12">
+                </div>
+            </div>
+            <div class="seek-item guests">
+                <div>
+                    <span>Guests</span>
+                    <input type="text" placeholder="2 Guests">
+                </div>
+            </div>
+            <button class="searchButton">Seek</button>
+        </div>
     </div>
-    <div class="main-content"></div>
-    <div class="Register"></div>
-    <div class="Book"></div>
-    <div class="Accommodation"></div>
-    <div class="Trips"></div>
-    <div class="RentAccommodation"></div>
-    <div class="Reviews"></div>
-    <div class="footer">
-        <div class="Explore"></div>
-        <div class="Pursue"></div>
-        <div class="Vfamily"></div>
-    </div>
+
+    <section class="Register">
+        <div class="register-content">
+            <div>
+                <span><i class="fa-solid fa-comments"></i></span>
+                <p>Sign in to send a message to the host and get more details about a listing.</p>
+            </div>
+            <button class="registerButton">Register</button>
+        </div>
+    </section>
+
+    <section class="card-container">
+        <div class="promo-card">
+            <div class="card-text">
+                <h3>Prices without surprises: The displayed price already includes the fees</h3>
+                <p>Regardless of where your next vacation takes you, a holiday home awaits.</p>
+                <a href="#">Book now <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="card-image" style="background-image: url('Cliff.jpeg');"></div>
+        </div>
+        <div class="promo-card">
+            <div class="card-text">
+                <h3>Save over £80 on last-minute breaks</h3>
+                <p>Book your spontaneous getaway and enjoy great savings.</p>
+                <a href="#">Book now <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="card-image" style="background-image: url('download.jpeg');"></div>
+        </div>
+        <div class="promo-card">
+            <div class="card-text">
+                <h3>A weekend can be full of holiday memories</h3>
+                <p>Create unforgettable moments with a short escape.</p>
+                <a href="#">Book now <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="card-image" style="background-image: url('downloa.jpeg');"></div>
+        </div>
+    </section>
+
+    <section class="acc-container">
+        <h1>Find accommodations to suit your taste</h1>
+        <div class="acc-card-container">
+            <div class="acc-card" style="background-image: url('VILLA.jpeg');">
+                <p>Villa</p>
+            </div>
+            <div class="acc-card" style="background-image: url('Views.jpeg');">
+                <p>Holiday Home</p>
+            </div>
+            <div class="acc-card" style="background-image: url('96.jpeg');">
+                <p>Villa</p>
+            </div>
+            <div class="acc-card" style="background-image: url('d.jpeg');">
+                <p>Riverside</p>
+            </div>
+            <div class="acc-card" style="background-image: url('a.jpeg');">
+                <p>Villa</p>
+            </div>
+            <div class="acc-card" style="background-image: url('Sunset.jpeg');">
+                <p>Sunset</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="listing-section">
+        <h2>Browse weekend trips</h2>
+        <h4>Offers for the period: <span>July 25–27</span></h4>
+        <div class="listing-cards">
+            <div class="listing-card">
+                <div class="listing-image">
+                    <span><i class="fa-solid fa-chevron-left"></i></span>
+                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                    <img src="Beache.jpeg" alt="Marseille apartment">
+                </div>
+                <div class="listing-text">
+                    <div class="ratings">
+                        <span class="number">10</span>
+                        <h6>Unusual <span>(121 reviews)</span></h6>
+                    </div>
+                    <p class="title">Apartment – Marseille</p>
+                    <p class="location">Provence-Alpes-Côte d’Azur</p>
+                    <div class="price-info">
+                        <span class="price">€714</span>
+                        <p>€714 per night</p>
+                        <p>incl. taxes & fees</p>
+                    </div>
+                </div>
+            </div>
+            <div class="listing-card">
+                <div class="listing-image">
+                    <span><i class="fa-solid fa-chevron-left"></i></span>
+                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                    <img src="Wallpapers.jpeg" alt="Galicia cottage">
+                </div>
+                <div class="listing-text">
+                    <div class="ratings">
+                        <span class="number">10</span>
+                        <h6>Unusual <span>(121 reviews)</span></h6>
+                    </div>
+                    <p class="title">Stone Cottage – 1 Room / 2-4 Guests</p>
+                    <p class="location">Bueu, Galicia</p>
+                    <div class="price-info">
+                        <span class="price">€348</span>
+                        <p>€348 total</p>
+                        <p>incl. taxes & fees</p>
+                    </div>
+                </div>
+            </div>
+            <div class="listing-card">
+                <div class="listing-image">
+                    <span><i class="fa-solid fa-chevron-left"></i></span>
+                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                    <img src="downloadp.jpeg" alt="Bali villa">
+                </div>
+                <div class="listing-text">
+                    <div class="ratings">
+                        <span class="number">10</span>
+                        <h6>Unusual <span>(121 reviews)</span></h6>
+                    </div>
+                    <p class="title">Villa with sea view and pool</p>
+                    <p class="location">Candi Dasa, Bali</p>
+                    <div class="price-info">
+                        <span class="price">€1,329</span>
+                        <p>€1,329 per night</p>
+                        <p>incl. taxes & fees</p>
+                    </div>
+                </div>
+            </div>
+            <div class="listing-card">
+                <div class="listing-image">
+                    <span><i class="fa-solid fa-chevron-left"></i></span>
+                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                    <img src="download (1).jpeg" alt="Hollywood condo">
+                </div>
+                <div class="listing-text">
+                    <div class="ratings">
+                        <span class="number">10</span>
+                        <h6>Unusual <span>(121 reviews)</span></h6>
+                    </div>
+                    <p class="title">Hollywood Beach Condo</p>
+                    <p class="location">Hollywood, FL</p>
+                    <div class="price-info">
+                        <span class="price">€1,191</span>
+                        <p>€1,191 per night</p>
+                        <p>incl. taxes & fees</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="images">
+        <div class="image-content">
+            <div class="image" style="background-image: url('summer1.jpeg');"></div>
+            <div class="text">
+                <p>1 WEEK HOLIDAY, SAVE MORE</p>
+                <p>Summer last minute: Save on accommodation with weekly discounts</p>
+            </div>
+        </div>
+        <div class="image-content">
+            <div class="image" style="background-image: url('summer2.jpeg');"></div>
+            <div class="text">
+                <p>1 WEEK HOLIDAY, SAVE MORE</p>
+                <p>Summer last minute: Save on accommodation with weekly discounts</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="listing-section">
+        <h2>Discover the perfect beachside accommodation for you</h2>
+        <h4>Offers for the period: <span>Sept. 20–24</span></h4>
+        <div class="listing-cards">
+            <div class="listing-card">
+                <div class="listing-image">
+                    <span><i class="fa-solid fa-chevron-left"></i></span>
+                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                    <img src="downloadp.jpeg" alt="Bali villa">
+                </div>
+                <div class="listing-text">
+                    <div class="ratings">
+                        <span class="number">10</span>
+                        <h6>Unusual <span>(121 reviews)</span></h6>
+                    </div>
+                    <p class="title">Villa with sea view and pool</p>
+                    <p class="location">Candi Dasa, Bali</p>
+                    <div class="price-info">
+                        <span class="price">€1,329</span>
+                        <p>€1,329 per night</p>
+                        <p>incl. taxes & fees</p>
+                    </div>
+                </div>
+            </div>
+            <div class="listing-card">
+                <div class="listing-image">
+                    <span><i class="fa-solid fa-chevron-left"></i></span>
+                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                    <img src="download (1).jpeg" alt="Hollywood condo">
+                </div>
+                <div class="listing-text">
+                    <div class="ratings">
+                        <span class="number">10</span>
+                        <h6>Unusual <span>(121 reviews)</span></h6>
+                    </div>
+                    <p class="title">Hollywood Beach Condo</p>
+                    <p class="location">Hollywood, FL</p>
+                    <div class="price-info">
+                        <span class="price">€1,191</span>
+                        <p>€1,191 per night</p>
+                        <p>incl. taxes & fees</p>
+                    </div>
+                </div>
+            </div>
+            <div class="listing-card">
+                <div class="listing-image">
+                    <span><i class="fa-solid fa-chevron-left"></i></span>
+                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                    <img src="Beache.jpeg" alt="Marseille apartment">
+                </div>
+                <div class="listing-text">
+                    <div class="ratings">
+                        <span class="number">10</span>
+                        <h6>Unusual <span>(121 reviews)</span></h6>
+                    </div>
+                    <p class="title">Apartment – Marseille</p>
+                    <p class="location">Provence-Alpes-Côte d’Azur</p>
+                    <div class="price-info">
+                        <span class="price">€714</span>
+                        <p>€714 per night</p>
+                        <p>incl. taxes & fees</p>
+                    </div>
+                </div>
+            </div>
+            <div class="listing-card">
+                <div class="listing-image">
+                    <span><i class="fa-solid fa-chevron-left"></i></span>
+                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                    <img src="Wallpapers.jpeg" alt="Galicia cottage">
+                </div>
+                <div class="listing-text">
+                    <div class="ratings">
+                        <span class="number">10</span>
+                        <h6>Unusual <span>(121 reviews)</span></h6>
+                    </div>
+                    <p class="title">Stone Cottage – 1 Room / 2-4 Guests</p>
+                    <p class="location">Bueu, Galicia</p>
+                    <div class="price-info">
+                        <span class="price">€348</span>
+                        <p>€348 total</p>
+                        <p>incl. taxes & fees</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="category-scroll">
+        <h2>Find private stays that suit you</h2>
+        <div class="category-text">
+            <p>Want to bring everyone from grandma to baby? Even your furry friends? Discover vacation rentals that meet your needs.</p>
+        </div>
+        <div class="category-cards">
+            <div class="category-card" style="background-image: url('Dubai.jpeg');">
+                <p>Near the Beach</p>
+            </div>
+            <div class="category-card" style="background-image: url('Luxury.jpeg');">
+                <p>Pet-Friendly</p>
+            </div>
+            <div class="category-card" style="background-image: url('travelSydney.jpeg');">
+                <p>Pools</p>
+            </div>
+            <div class="category-card" style="background-image: url('Wanders.jpeg');">
+                <p>More Bedrooms</p>
+            </div>
+            <div class="category-card" style="background-image: url('Sunset.jpeg');">
+                <p>Sunset Views</p>
+            </div>
+            <div class="category-card" style="background-image: url('VILLA.jpeg');">
+                <p>Villas</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="rent-container">
+        <div class="rent-content">
+            <h1>Rent your accommodation with confidence with FeWo-direkt</h1>
+            <p>Real-time support, quick and easy registration, and guests with positive feedback – with FeWo-direkt, hosting feels like a vacation.</p>
+            <button>Advertise accommodation</button>
+        </div>
+    </section>
+
+    <section class="questions-container">
+        <div class="questions">
+            <h1>What is FeWo-direkt?</h1>
+            <p>FeWo-direkt is your trusted partner for booking holiday homes and apartments. As part of Vrbo, a leading online marketplace for vacation rentals, FeWo-direkt offers over two million unique accommodations, including villas, bungalows, apartments, cabins, and more. Secure payments, 24/7 support, and a Book with Confidence Guarantee make booking effortless. With a user-friendly website and practical filters, you can easily find your dream vacation rental within your budget for a stress-free holiday experience.</p>
+        </div>
+        <div class="questions">
+            <h1>Benefits of renting a holiday home or apartment</h1>
+            <p>Families and groups especially appreciate the benefits of vacation rentals: more space, privacy, and amenities. Enjoy greater flexibility and freedom compared to traditional hotels, whether you're planning a city break or a relaxing getaway with your pet in scenic surroundings. Looking for a cozy mountain cabin with a washing machine and hot tub? A beachfront house or a large villa in the south with a pool and fully equipped kitchen? No problem – vacation rentals come in all sizes and with all the amenities you need for your next family vacation, adventure with friends, or romantic weekend.</p>
+        </div>
+        <div class="faq">
+            <h1>Popular travel destinations</h1>
+            <ul>
+                <li><span>Top Destinations</span> <i class="fa-solid fa-chevron-down"></i></li>
+                <li><span>Unique Accommodations</span> <i class="fa-solid fa-chevron-down"></i></li>
+                <li><span>Trending Destinations in June</span> <i class="fa-solid fa-chevron-down"></i></li>
+                <li><span>Top Villa Destinations</span> <i class="fa-solid fa-chevron-down"></i></li>
+                <li><span>Holiday Apartment Destinations</span> <i class="fa-solid fa-chevron-down"></i></li>
+                <li><span>Stay Longer and Save</span> <i class="fa-solid fa-chevron-down"></i></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <img src="logo.svg" alt="FeWo-direkt Logo">
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Explore FeWo-direkt</h3>
+                    <ul>
+                        <li><a href="#">Advertise accommodation</a></li>
+                        <li><a href="#">Book with confidence</a></li>
+                        <li><a href="#">Trust and security</a></li>
+                        <li><a href="#">Resources for partners</a></li>
+                        <li><a href="#">Holiday homes and holiday inspiration</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <ul>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">General terms and conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Statement</a></li>
+                        <li><a href="#">Reporting illegal content</a></li>
+                        <li><a href="#">Legal Notice/Contact</a></li>
+                        <li><a href="#">Responsible owner</a></li>
+                        <li><a href="#">Content guidelines and reporting content</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>The Vrbo Family</h3>
+                    <ul>
+                        <li><a href="#">Vrbo</a></li>
+                        <li><a href="#">Abritel.fr</a></li>
+                        <li><a href="#">FeWo-direkt.de</a></li>
+                        <li><a href="#">Bookabach.co.nz</a></li>
+                        <li><a href="#">Stayz.com.au</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p id="copyRight">© 2025 HomeAway, an Expedia Group company. All rights reserved. HomeAway and the HomeAway logo are trademarks or registered trademarks of HomeAway.com, Inc.</p>
+        </div>
+    </footer>
 </body>
+
+</html>
